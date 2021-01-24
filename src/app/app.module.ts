@@ -1,16 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';  
 
 import { AppComponent } from './app.component';
+import { CompaniesTableComponent } from './company/companies-table/companies-table.component';
+import { AddNewCompanyComponent } from './company/add-new-company/add-new-company.component';
+import { CompanyService } from '../app/services/company.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompaniesTableComponent,
+    AddNewCompanyComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,    
+    AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [CompanyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,65 @@
+<h2>New Company Form</h2>
+
+<div class="form-group">
+  <form (ngSubmit)="addNewCompany(companyForm)" #companyForm="ngForm">
+    <div class="company-name">
+        <div>Company Name</div>
+        <input type="text"
+             placeholder="Company Name"
+             required
+             name="name"
+             #companyName="ngModel"
+             [(ngModel)]="company.Name">
+    </div>
+    <div *ngIf="companyName.errors && companyName.errors.required">
+        Name is Mandatory
+    </div>
+    <div class="company-exchange">
+    </div>
+        <div>
+        <div>Exchange</div>
+        <input type="text"
+                placeholder="Exchange"
+                required
+                name="Exchange"
+                #Exchange="ngModel"                                  
+                [(ngModel)]="company.Exchange">
+    </div>
+    <div *ngIf="Exchange.errors && Exchange.errors.required">
+        Exchange is Mandatory
+    </div>
+    <div class="company-ticker">
+        <div>Ticker</div>
+        <input type="text"
+               placeholder="Ticker"
+               required
+               name="Ticker"
+               #Ticker="ngModel"                                  
+               [(ngModel)]="company.Ticker">
+    </div>
+    <div *ngIf="Ticker.errors && Ticker.errors.required">
+        Ticker is Mandatory
+    </div>      
+    <div class="company-isin">
+        <div>Company Isin</div>
+        <input type="text"
+             placeholder="Isin"
+             required
+             name="Isin"
+             #Isin="ngModel"
+             [(ngModel)]="company.Isin">
+    </div>
+    <div *ngIf="Isin.errors && Isin.errors.required">
+        Isin code is Mandatory
+    </div>      
+    <div class="company-website">
+        <div>Company website</div>
+        <input type="text"
+             placeholder="website"
+             name="website"
+             #companyCode="ngModel"
+             [(ngModel)]="company.website">
+    </div>
+    <button type="submit">Add New Company</button>
+  </form>
+</div>
