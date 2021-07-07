@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { CompaniesTableComponent } from './company/companies-table/companies-table.component';
 import { AddNewCompanyComponent } from './company/add-new-company/add-new-company.component';
 import { CompanyService } from '../app/services/company.service';
+import { SearchTextComponent } from './company/search-text/search-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompaniesTableComponent,
-    AddNewCompanyComponent
+    AddNewCompanyComponent,
+    SearchTextComponent
   ],
   imports: [
     BrowserModule,

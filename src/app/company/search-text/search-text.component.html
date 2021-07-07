@@ -1,0 +1,23 @@
+<div class="text-container">
+    <form (ngSubmit)="seachText(searchForm)" #searchForm="ngForm">
+        <div class="text">
+            <div>Text to search for</div>
+            <input type="text"
+                 placeholder="Search Text"
+                 required
+                 name="Text"
+                 #searchText="ngModel"
+                 [(ngModel)]="search.Text">
+        </div>
+        <div class="text">
+            <div>Search Result</div>
+            <input type="text"
+                 placeholder="Result Text"
+                 name="Result"
+                 #searchResult="ngModel"
+                 [(ngModel)]="search.Result"
+                 [size]="search.Result.length">
+        </div>
+        <button type="submit">Search Thesis Text</button>
+    </form>
+  </div>

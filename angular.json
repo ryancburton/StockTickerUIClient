@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "StockTickerUIClient": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "StockTickerUIClient"
+    }
+  },
+  "defaultProject": "StockTickerUIClient",
+  "cli": {
+    "analytics": "0477906f-ed5f-464b-a5fb-7aa68dd8f440"
+  }
 }
