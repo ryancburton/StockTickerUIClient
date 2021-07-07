@@ -10,6 +10,7 @@ import { CompanyService } from '../../../app/services/company.service';
 export class AddNewCompanyComponent {
 
   public company: Company;
+  public str: String;
   
   constructor(private companyService: CompanyService) {
     this.initializeCompany();
