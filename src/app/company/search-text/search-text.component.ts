@@ -14,7 +14,7 @@ export class SearchTextComponent implements OnInit {
 
   constructor(private companyService: CompanyService) {
       this.search =  {
-        Text: 'Enter search text',
+        Text: 'Enter search text.',
         Result: '',
         LLen : 20,
         RLen : 20

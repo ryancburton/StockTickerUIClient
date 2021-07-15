@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SearchTextComponent } from './search-text.component';
 
+//ss
 describe('SearchTextComponent', () => {
   let component: SearchTextComponent;
   let fixture: ComponentFixture<SearchTextComponent>;
@@ -10,7 +11,7 @@ describe('SearchTextComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ SearchTextComponent ]
     })
-    .compileComponents();
+        .compileComponents();
   }));
 
   beforeEach(() => {
