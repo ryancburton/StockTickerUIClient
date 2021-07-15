@@ -17,6 +17,7 @@ export class CompanyService {
   getThesisText(search: Search) : Observable<any>{
     //const headers = new HttpHeaders().append('header', 'value');
     const params = new HttpParams().append('search_string', search.Text);
+    
     //params.append('left_len', '20');
     //params.append('right_len', '20');
     return this.http.get('/api/company/SearchText', {params, responseType: 'text'})
