@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //title = 'Welcome to Stock Ticker';
+  
   title = 'Welcome to Thesis Text search.';
 }
