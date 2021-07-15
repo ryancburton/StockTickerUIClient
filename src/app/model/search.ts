@@ -3,4 +3,5 @@ export class Search {
     Result: string;
     LLen : number;
     RLen : number;
+    
 }
