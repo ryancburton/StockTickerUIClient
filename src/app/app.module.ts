@@ -26,4 +26,4 @@ import { SearchTextComponent } from './company/search-text/search-text.component
   providers: [CompanyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {  }
